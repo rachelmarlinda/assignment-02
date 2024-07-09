@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Isi borang</title>
+    <link rel="stylesheet" href="assignment02.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="header">
+        <a href="home.html" class="navi">HOME</a>
+        <a href="product.html" class="navi">PRODUCT</a>
+        <a href="gallery.html" class="navi">GALLERY</a>
+        <a href="blog.html" class="navi">BLOG</a>
+        <a href="inventory.html" class="navi">MY INVENTORY</a>
+    </div>
+
+    <div id="middle">
+    <div id="foto">
+        <img src="chal1.png" width="150px">
+    </div>
+
+    <div id="profil">
+        <h1 id="nama">Nama Anda</h1>
+        <p id="jabatan">Front End Designer</p>
+        <p id="tombol1">Edit</p>
+        <p id="tombol2">Resume</p>
+    </div>
+    
+    <div id="addition">
+       <table>
+        <tr>
+            <td id="kolom" class="tebal">Availability</td>
+            <td id="copyavailability">Full Time</td>
+        </tr>
+        <tr>
+            <td class="tebal">Usia</td>
+            <td id="copyusia">19</td>
+        </tr>
+        <tr>
+            <td class="tebal">Lokasi</td>
+            <td id="copylokasi">Jakarta</td>
+        </tr>
+        <tr>
+            <td class="tebal">Pengalaman</td>
+            <td id="copyyears">2</td>
+        </tr>
+        <tr>
+            <td class="tebal">Email</td>
+            <td id="copyemail">email@gmail.com</td>
+        </tr>
+       </table>
+    </div>
+    </div>
+
+    <div id="formulir">
+    <form onsubmit="preventLoad(event)">
+        <label for="pastenama" class="third">Nama</label>
+        <input type="text" class="isian" id="pastenama"><br>
+
+        <label for="pasterole" class="third">Role</label>
+        <input type="text" class="isian" id="pasterole"><br>
+
+        <label for="pasteavailability" class="third">Availability</label>
+        <input type="text" class="isian" id="pasteavailability"><br>
+
+        <label for="pasteusia" class="third">Usia</label>
+        <input type="number" class="isian" id="pasteusia"><br>
+
+        <label for="pastelokasi" class="third">Lokasi</label>
+        <input type="text" class="isian" id="pastelokasi"><br>
+
+        <label for="pasteyears" class="third">Years Experience</label>
+        <input type="number" class="isian" id="pasteyears"><br>
+
+        <label for="pasteemail" class="third">Email</label>
+        <input type="email" class="isian" id="pasteemail"><br>
+
+        <input type="submit" value="SUBMIT" id="kirim" onclick="submitForm()"><br>
+
+    </form>
+    </div>
+
+    <script src="assignment02.js"></script>
+
+</body>
+</html>
